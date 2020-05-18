@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
-## functions do
+## functions do: This function try to find the inversion of the matrix 
+## through two steps
 
-## Write a short comment describing this function
+## Write a short comment describing this function : To make derive and set the vector
+
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -19,12 +21,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Write a short comment describing this function: To get the inverse matrix from the vector
 
 cacheSolve <- function(x, ...) {
         i <- x$getinverse()
         if (!is.null(i)) {
-                message("getting cached data")
                 return(i)
         }
         data <- x$get()
